@@ -1,0 +1,42 @@
+// ============================================
+// 马拉松小程序 - Apple 风格简洁主题
+// ============================================
+
+// 品牌主题色：Apple Blue
+$color-primary: #0071E3;
+$color-primary-light: #2997FF;
+$color-primary-dark: #0058B0;
+
+// 辅助色
+$color-secondary: #6E6E73;
+$color-secondary-light: #86868B;
+
+// 功能色
+$color-success: #34C759;
+$color-warning: #FF9500;
+$color-error: #FF3B30;
+$color-info: #0071E3;
+
+// 背景色（Apple 浅色主题）
+$color-bg-page: #F5F5F7;
+$color-bg-card: #FFFFFF;
+$color-bg-card-hover: #FAFAFA;
+$color-bg-hover: #F2F2F7;
+$color-bg-input: #F2F2F7;
+$color-bg-gradient: linear-gradient(135deg, #0071E3 0%, #2997FF 100%);
+
+// 文本色
+$color-text-primary: #1D1D1F;
+$color-text-secondary: #6E6E73;
+$color-text-tertiary: #86868B;
+$color-text-disabled: #C7C7CC;
+$color-text-white: #FFFFFF;
+
+// 边框色
+$color-border: #D2D2D7;
+$color-divider: #E5E5EA;
+
+// 业务色
+$color-pb: #0071E3;        // PB 高亮色
+$color-expense: #5856D6;   // 花费相关
+$color-finish: #34C759;    // 完赛状态

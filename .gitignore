@@ -1,0 +1,43 @@
+# 依赖
+node_modules/
+
+# 编译输出
+dist/
+build/
+.taro/
+
+# 环境变量与密钥
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# IDE
+.idea/
+.vscode/
+.DS_Store
+
+# 日志
+*.log
+logs/
+
+# Taro / 小程序构建产物
+miniprogram/dist/
+miniprogram/.taro/
+
+# 后端构建产物
+backend/dist/
+
+# 测试缓存
+coverage/
+.nyc_output/
+
+# 临时与锁文件
+*.lock
+!package-lock.json
+!pnpm-lock.yaml
+.pai/
+
+# 系统文件
+Thumbs.db

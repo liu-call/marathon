@@ -1,0 +1,129 @@
+@use '@/styles/variables.scss' as *;
+
+.page {
+  min-height: 100vh;
+  background: $color-bg-page;
+}
+
+.header {
+  background: $color-bg-gradient;
+  padding: $spacing-xl $page-padding 80rpx;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: $radius-round;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48rpx;
+  margin-right: $spacing-md;
+  flex-shrink: 0;
+}
+
+.userInfo {
+  flex: 1;
+}
+
+.nickName {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $color-text-white;
+  display: block;
+  margin-bottom: 4rpx;
+}
+
+.userDesc {
+  font-size: $font-size-sm;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+// 年度数据卡片
+.annualStats {
+  background: $color-bg-card;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  margin: -60rpx $page-padding $spacing-md;
+  box-shadow: $shadow-card;
+  position: relative;
+  z-index: 1;
+}
+
+.annualTitle {
+  font-size: $font-size-md;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  margin-bottom: $spacing-md;
+}
+
+.annualGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.annualItem {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: $spacing-md;
+}
+
+.annualValue {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $color-primary;
+}
+
+.annualLabel {
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+  margin-top: 4rpx;
+}
+
+// 菜单
+.menu {
+  margin: 0 $page-padding $spacing-md;
+  background: $color-bg-card;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-card;
+  overflow: hidden;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: $spacing-md $spacing-lg;
+  border-bottom: 1rpx solid $color-divider;
+  transition: background $transition-base;
+
+  &:active {
+    background: $color-bg-hover;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.menuIcon {
+  font-size: 36rpx;
+  margin-right: $spacing-md;
+  width: 48rpx;
+  text-align: center;
+}
+
+.menuText {
+  flex: 1;
+  font-size: $font-size-md;
+  color: $color-text-primary;
+}
+
+.menuArrow {
+  font-size: $font-size-md;
+  color: $color-text-disabled;
+}

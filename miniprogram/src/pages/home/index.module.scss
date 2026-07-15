@@ -1,0 +1,147 @@
+@use '@/styles/variables.scss' as *;
+
+.page {
+  min-height: 100vh;
+  background: $color-bg-page;
+}
+
+.hero {
+  background: $color-bg-gradient;
+  padding: 0 0 80rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  padding: $spacing-lg $page-padding 0;
+}
+
+.heroTitle {
+  font-size: $font-size-xxl;
+  font-weight: $font-weight-bold;
+  color: $color-text-white;
+  display: block;
+}
+
+.heroDate {
+  font-size: $font-size-sm;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 4rpx;
+  display: block;
+}
+
+.statsCard {
+  background: $color-bg-card;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  margin: -60rpx $page-padding $spacing-md;
+  box-shadow: $shadow-card, $shadow-glow;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.statItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.statItem + .statItem::before {
+  content: '';
+  width: 1rpx;
+  height: 48rpx;
+  background: $color-divider;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.statValue {
+  font-size: $font-size-xl;
+  font-weight: $font-weight-bold;
+  color: $color-text-primary;
+}
+
+.statValueHighlight {
+  color: $color-primary;
+}
+
+.statLabel {
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+  margin-top: 4rpx;
+}
+
+.section {
+  padding: 0 $page-padding;
+  margin-bottom: $spacing-md;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-md;
+}
+
+.sectionTitle {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+}
+
+.sectionMore {
+  font-size: $font-size-sm;
+  color: $color-primary;
+}
+
+.quickActions {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $page-padding;
+  margin-bottom: $spacing-lg;
+}
+
+.quickAction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.quickIcon {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: $radius-md;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  margin-bottom: $spacing-xs;
+}
+
+.quickIconBlue { background: rgba(0, 113, 227, 0.1); color: $color-primary; }
+.quickIconGreen { background: rgba(52, 199, 89, 0.1); color: $color-success; }
+.quickIconPurple { background: rgba(88, 86, 214, 0.1); color: #5856D6; }
+.quickIconOrange { background: rgba(255, 149, 0, 0.1); color: $color-warning; }
+
+.quickText {
+  font-size: $font-size-xs;
+  color: $color-text-secondary;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-xl 0;
+}
+
+.emptyText {
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+}

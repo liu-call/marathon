@@ -1,0 +1,12 @@
+@use '@/styles/variables.scss' as *;
+.page { min-height: 100vh; background: $color-bg-page; }
+.hero { background: linear-gradient(135deg, #5856D6 0%, #7B6FF0 100%); padding: 0 0 $spacing-xl; text-align: center; }
+.heroAmount { font-size: 60rpx; font-weight: $font-weight-bold; color: $color-text-white; }
+.heroLabel { font-size: $font-size-sm; color: rgba(255,255,255,0.8); margin-top: 4rpx; }
+.card { background: $color-bg-card; border-radius: $radius-lg; padding: $spacing-lg; margin: $spacing-md $page-padding; box-shadow: $shadow-card; }
+.cardTitle { font-size: $font-size-md; font-weight: $font-weight-semibold; color: $color-text-primary; margin-bottom: $spacing-md; }
+.breakdownRow { display: flex; justify-content: space-between; align-items: center; padding: $spacing-sm 0; border-bottom: 1rpx solid $color-divider; &:last-child { border-bottom: none; } }
+.breakdownLabel { font-size: $font-size-md; color: $color-text-secondary; }
+.breakdownValue { font-size: $font-size-md; color: $color-text-primary; font-weight: $font-weight-medium; }
+.barContainer { height: 12rpx; background: $color-bg-hover; border-radius: $radius-round; margin-top: $spacing-sm; overflow: hidden; }
+.barFill { height: 100%; border-radius: $radius-round; }

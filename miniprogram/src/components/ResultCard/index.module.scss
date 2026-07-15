@@ -1,0 +1,84 @@
+@use '@/styles/variables.scss' as *;
+
+.card {
+  background: $color-bg-card;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-md;
+  box-shadow: $shadow-card;
+  transition: all $transition-base;
+
+  &:active {
+    transform: scale(0.98);
+    opacity: 0.95;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: $spacing-md;
+}
+
+.raceInfo {
+  flex: 1;
+}
+
+.raceName {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  display: block;
+  @include text-ellipsis;
+}
+
+.raceDate {
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+  margin-top: $spacing-xs;
+  display: block;
+}
+
+.pbBadge {
+  background: $color-bg-gradient;
+  padding: 4rpx $spacing-sm;
+  border-radius: $radius-xs;
+  flex-shrink: 0;
+}
+
+.pbText {
+  font-size: $font-size-xs;
+  color: $color-text-white;
+  font-weight: $font-weight-bold;
+  white-space: nowrap;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.statLabel {
+  font-size: $font-size-xs;
+  color: $color-text-tertiary;
+  margin-bottom: 4rpx;
+}
+
+.statValue {
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  color: $color-text-primary;
+}
+
+.statValuePB {
+  color: $color-primary;
+  font-weight: $font-weight-bold;
+}

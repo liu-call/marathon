@@ -1,0 +1,66 @@
+@use '@/styles/variables.scss' as *;
+
+.navBar {
+  width: 100%;
+  background: transparent;
+  position: relative;
+  z-index: 10;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+  padding: 0 $page-padding;
+  position: relative;
+}
+
+.backBtn {
+  width: 64rpx;
+  height: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $radius-round;
+  background: rgba(0, 0, 0, 0.05);
+  transition: all $transition-base;
+
+  &:active {
+    background: rgba(0, 113, 227, 0.1);
+    transform: scale(0.92);
+  }
+}
+
+.backBtnLight {
+  background: rgba(255, 255, 255, 0.2);
+
+  &:active {
+    background: rgba(255, 255, 255, 0.35);
+  }
+}
+
+.textLight {
+  color: $color-text-white !important;
+}
+
+.backIcon {
+  font-size: 48rpx;
+  color: $color-text-primary;
+  line-height: 1;
+  margin-top: -6rpx;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  white-space: nowrap;
+}
+
+.placeholder {
+  width: 64rpx;
+  flex-shrink: 0;
+}

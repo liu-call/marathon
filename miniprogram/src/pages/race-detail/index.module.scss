@@ -1,0 +1,70 @@
+@use '@/styles/variables.scss' as *;
+
+.page { min-height: 100vh; background: $color-bg-page; padding-bottom: 120rpx; }
+
+.hero {
+  background: $color-bg-gradient;
+  padding: 0 $page-padding $spacing-lg;
+}
+.heroName { font-size: $font-size-xxl; font-weight: $font-weight-bold; color: $color-text-white; display: block; margin-top: $spacing-sm; }
+.heroMeta { font-size: $font-size-sm; color: rgba(255,255,255,0.85); margin-top: 4rpx; }
+
+.card {
+  background: $color-bg-card; border-radius: $radius-lg; padding: $spacing-lg;
+  margin: $spacing-md $page-padding; box-shadow: $shadow-card;
+}
+.cardHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: $spacing-md; }
+.cardTitle { font-size: $font-size-md; font-weight: $font-weight-semibold; color: $color-text-primary; }
+.cardAction { font-size: $font-size-sm; color: $color-primary; }
+
+.infoRow { display: flex; justify-content: space-between; padding: $spacing-sm 0; border-bottom: 1rpx solid $color-divider;
+  &:last-child { border-bottom: none; }
+}
+.infoLabel { font-size: $font-size-md; color: $color-text-tertiary; }
+.infoValue { font-size: $font-size-md; color: $color-text-primary; font-weight: $font-weight-medium; }
+.notesText { font-size: $font-size-md; color: $color-text-secondary; line-height: $line-height-loose; }
+
+.statusTag {
+  display: inline-block; padding: 4rpx $spacing-sm; border-radius: $radius-round;
+  font-size: $font-size-xs; margin-top: $spacing-sm;
+}
+.statusSelected { background: rgba(52, 199, 89, 0.15); color: $color-success; }
+.statusRegistered { background: rgba(0, 113, 227, 0.15); color: $color-primary; }
+.statusNotSelected { background: rgba(255, 59, 48, 0.15); color: $color-error; }
+.statusPending { background: rgba(255, 149, 0, 0.15); color: $color-warning; }
+
+/* 酒店模块 */
+.hotelItem { padding: $spacing-md 0; border-bottom: 1rpx solid $color-divider; &:last-child { border-bottom: none; } }
+.hotelHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: $spacing-sm; }
+.hotelName { font-size: $font-size-md; font-weight: $font-weight-medium; color: $color-text-primary; flex: 1; @include text-ellipsis; }
+.hotelStatus { padding: 2rpx $spacing-sm; border-radius: $radius-round; font-size: $font-size-xs; }
+.hotelStatusOk { background: rgba(52, 199, 89, 0.1); color: $color-success; }
+.hotelStatusPending { background: rgba(255, 149, 0, 0.1); color: $color-warning; }
+.hotelInfo { display: flex; justify-content: space-between; align-items: center; }
+.hotelInfoText { font-size: $font-size-sm; color: $color-text-tertiary; }
+.hotelPrice { font-size: $font-size-md; color: $color-primary; font-weight: $font-weight-bold; }
+.hotelDist { font-size: $font-size-xs; color: $color-text-tertiary; margin-top: 4rpx; display: block; }
+
+.emptySection { padding: $spacing-lg 0; text-align: center; }
+.emptyText { font-size: $font-size-sm; color: $color-text-tertiary; }
+
+.addHotelBtn {
+  margin-top: $spacing-md; padding: $spacing-sm; text-align: center;
+  border: 1rpx dashed $color-border; border-radius: $radius-md;
+  font-size: $font-size-sm; color: $color-primary;
+  transition: all $transition-base;
+  &:active { background: $color-bg-hover; }
+}
+
+.bottomBar {
+  position: fixed; bottom: 0; left: 0; right: 0; display: flex;
+  background: $color-bg-card; padding: $spacing-sm $page-padding; box-shadow: $shadow-float; gap: $spacing-sm;
+}
+.btn {
+  flex: 1; height: $button-height-lg; border-radius: $radius-button;
+  display: flex; align-items: center; justify-content: center;
+  font-size: $font-size-md; font-weight: $font-weight-medium;
+  @include button-reset;
+}
+.btnEdit { background: $color-bg-gradient; color: $color-text-white; }
+.btnDelete { background: $color-bg-hover; color: $color-text-secondary; }

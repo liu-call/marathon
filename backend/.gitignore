@@ -1,0 +1,19 @@
+# 依赖
+node_modules/
+
+# 编译输出
+dist/
+
+# 环境变量
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# 日志
+*.log
+logs/
+
+# OS
+.DS_Store

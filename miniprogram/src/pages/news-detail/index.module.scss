@@ -1,0 +1,12 @@
+@use '@/styles/variables.scss' as *;
+.page { min-height: 100vh; background: $color-bg-page; }
+.content { padding: $spacing-md $page-padding; }
+.heroImage { width: 100%; height: 400rpx; }
+.card { background: $color-bg-card; border-radius: $radius-lg; padding: $spacing-lg; margin-bottom: $spacing-md; box-shadow: $shadow-card; }
+.title { font-size: $font-size-xl; font-weight: $font-weight-bold; color: $color-text-primary; line-height: $line-height-loose; margin-bottom: $spacing-sm; }
+.meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: $spacing-md; }
+.source { font-size: $font-size-sm; color: $color-primary; }
+.date { font-size: $font-size-xs; color: $color-text-tertiary; }
+.tags { display: flex; flex-wrap: wrap; gap: 8rpx; margin-bottom: $spacing-md; }
+.tag { background: $color-bg-hover; color: $color-text-secondary; font-size: $font-size-xs; padding: 4rpx $spacing-sm; border-radius: $radius-round; }
+.bodyText { font-size: $font-size-md; color: $color-text-secondary; line-height: 1.8; }

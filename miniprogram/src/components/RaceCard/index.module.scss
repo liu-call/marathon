@@ -1,0 +1,98 @@
+@use '@/styles/variables.scss' as *;
+
+.card {
+  background: $color-bg-card;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-md;
+  box-shadow: $shadow-card;
+  transition: all $transition-base;
+
+  &:active {
+    transform: scale(0.98);
+    opacity: 0.95;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: $spacing-md;
+}
+
+.raceInfo {
+  flex: 1;
+}
+
+.raceName {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  display: block;
+  @include text-ellipsis;
+}
+
+.raceType {
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+  margin-top: $spacing-xs;
+  display: block;
+}
+
+.statusTag {
+  padding: 4rpx $spacing-sm;
+  border-radius: $radius-xs;
+  flex-shrink: 0;
+  margin-left: $spacing-sm;
+}
+
+.statusText {
+  font-size: $font-size-xs;
+  white-space: nowrap;
+}
+
+.statusPending { background: rgba(255, 149, 0, 0.1); color: $color-warning; }
+.statusRegistered { background: rgba(0, 113, 227, 0.1); color: $color-primary; }
+.statusSelected { background: rgba(52, 199, 89, 0.1); color: $color-success; }
+.statusNotSelected { background: rgba(255, 59, 48, 0.1); color: $color-error; }
+.statusFinished { background: rgba(142, 142, 147, 0.1); color: $color-text-tertiary; }
+.statusAbandoned { background: rgba(142, 142, 147, 0.1); color: $color-text-tertiary; }
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+}
+
+.infoRow {
+  display: flex;
+  align-items: center;
+}
+
+.infoLabel {
+  font-size: $font-size-sm;
+  color: $color-text-tertiary;
+  width: 64rpx;
+  flex-shrink: 0;
+}
+
+.infoValue {
+  font-size: $font-size-md;
+  color: $color-text-secondary;
+  @include text-ellipsis;
+}
+
+.countdown {
+  margin-top: $spacing-md;
+  padding-top: $spacing-md;
+  border-top: 1rpx solid $color-divider;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.countdownText {
+  font-size: $font-size-sm;
+  color: $color-primary;
+  font-weight: $font-weight-medium;
+}

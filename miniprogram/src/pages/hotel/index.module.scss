@@ -1,0 +1,34 @@
+@use '@/styles/variables.scss' as *;
+.page { min-height: 100vh; background: $color-bg-page; }
+.list { padding: $spacing-md $page-padding; }
+.card { background: $color-bg-card; border-radius: $radius-lg; padding: $spacing-lg; margin-bottom: $spacing-md; box-shadow: $shadow-card; transition: all $transition-base; &:active { transform: scale(0.98); } }
+.cardHeader { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: $spacing-sm; }
+.hotelName { font-size: $font-size-lg; font-weight: $font-weight-semibold; color: $color-text-primary; display: block; flex: 1; @include text-ellipsis; }
+.raceTag { display: inline-block; background: rgba(0, 113, 227, 0.08); color: $color-primary; font-size: $font-size-xs; padding: 2rpx $spacing-sm; border-radius: $radius-xs; margin-bottom: $spacing-sm; }
+.hotelStatus { padding: 4rpx $spacing-sm; border-radius: $radius-round; font-size: $font-size-xs; flex-shrink: 0; }
+.statusOk { background: rgba(52, 199, 89, 0.1); color: $color-success; }
+.statusPending { background: rgba(255, 149, 0, 0.1); color: $color-warning; }
+.infoRow { display: flex; justify-content: space-between; padding: $spacing-sm 0; border-bottom: 1rpx solid $color-divider; &:last-child { border-bottom: none; } }
+.infoLabel { font-size: $font-size-md; color: $color-text-tertiary; }
+.infoValue { font-size: $font-size-md; color: $color-text-primary; font-weight: $font-weight-medium; }
+.priceTag { color: $color-primary; font-weight: $font-weight-bold; }
+.emptyState { display: flex; flex-direction: column; align-items: center; padding: 120rpx 0; }
+.emptyIcon { font-size: 80rpx; margin-bottom: $spacing-md; }
+.emptyText { font-size: $font-size-md; color: $color-text-tertiary; margin-bottom: $spacing-lg; }
+.addBtn { padding: 16rpx $spacing-xl; background: $color-bg-gradient; border-radius: $radius-button; color: $color-text-white; font-size: $font-size-md; @include button-reset; }
+.fab { position: fixed; right: $page-padding; bottom: 60rpx; width: 96rpx; height: 96rpx; border-radius: $radius-round; background: $color-bg-gradient; display: flex; align-items: center; justify-content: center; box-shadow: $shadow-card-hover; z-index: 100; &:active { transform: scale(0.92); } }
+.fabText { font-size: 48rpx; color: $color-text-white; }
+
+/* 表单弹窗 */
+.modal { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); z-index: 200; display: flex; align-items: flex-end; }
+.modalContent { background: $color-bg-card; width: 100%; border-radius: $radius-xl $radius-xl 0 0; padding: $spacing-lg; max-height: 80vh; overflow-y: auto; }
+.modalHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: $spacing-lg; }
+.modalTitle { font-size: $font-size-lg; font-weight: $font-weight-semibold; color: $color-text-primary; }
+.modalClose { font-size: $font-size-xl; color: $color-text-tertiary; padding: $spacing-xs; }
+.formGroup { margin-bottom: $spacing-md; }
+.formLabel { font-size: $font-size-sm; color: $color-text-tertiary; margin-bottom: 8rpx; display: block; }
+.formInput { width: 100%; height: 80rpx; border: 1rpx solid $color-border; border-radius: $radius-md; padding: 0 $spacing-md; font-size: $font-size-md; color: $color-text-primary; box-sizing: border-box; background: $color-bg-card; }
+.formPicker { width: 100%; height: 80rpx; border: 1rpx solid $color-border; border-radius: $radius-md; padding: 0 $spacing-md; font-size: $font-size-md; color: $color-text-primary; display: flex; align-items: center; box-sizing: border-box; background: $color-bg-card; }
+.modalBtns { display: flex; gap: $spacing-md; margin-top: $spacing-lg; }
+.modalCancel { flex: 1; height: $button-height-lg; border-radius: $radius-button; background: $color-bg-hover; display: flex; align-items: center; justify-content: center; font-size: $font-size-md; color: $color-text-secondary; @include button-reset; }
+.modalConfirm { flex: 1; height: $button-height-lg; border-radius: $radius-button; background: $color-bg-gradient; display: flex; align-items: center; justify-content: center; font-size: $font-size-md; color: $color-text-white; font-weight: $font-weight-medium; @include button-reset; }

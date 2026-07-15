@@ -1,0 +1,57 @@
+export default defineAppConfig({
+  pages: [
+    'pages/home/index',
+    'pages/races/index',
+    'pages/results/index',
+    'pages/mine/index',
+    'pages/race-detail/index',
+    'pages/race-edit/index',
+    'pages/result-edit/index',
+    'pages/report/index',
+    'pages/expense/index',
+    'pages/news/index',
+    'pages/news-detail/index',
+    'pages/hotel/index',
+    'pages/settings/index',
+  ],
+  window: {
+    navigationStyle: 'custom',
+    backgroundTextStyle: 'dark',
+    navigationBarBackgroundColor: '#FFFFFF',
+    navigationBarTitleText: '马拉松助手',
+    navigationBarTextStyle: 'black',
+    backgroundColor: '#F5F5F7',
+  },
+  tabBar: {
+    color: '#86868B',
+    selectedColor: '#0071E3',
+    backgroundColor: '#FFFFFF',
+    borderStyle: 'white',
+    list: [
+      {
+        pagePath: 'pages/home/index',
+        text: '首页',
+        iconPath: 'assets/tabbar/home.svg',
+        selectedIconPath: 'assets/tabbar/home-selected.svg',
+      },
+      {
+        pagePath: 'pages/races/index',
+        text: '赛事',
+        iconPath: 'assets/tabbar/races.svg',
+        selectedIconPath: 'assets/tabbar/races-selected.svg',
+      },
+      {
+        pagePath: 'pages/results/index',
+        text: '成绩',
+        iconPath: 'assets/tabbar/results.svg',
+        selectedIconPath: 'assets/tabbar/results-selected.svg',
+      },
+      {
+        pagePath: 'pages/mine/index',
+        text: '我的',
+        iconPath: 'assets/tabbar/mine.svg',
+        selectedIconPath: 'assets/tabbar/mine-selected.svg',
+      },
+    ],
+  },
+})

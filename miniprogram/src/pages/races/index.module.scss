@@ -1,0 +1,94 @@
+@use '@/styles/variables.scss' as *;
+
+.page {
+  min-height: 100vh;
+  background: $color-bg-page;
+}
+
+// 筛选栏
+.filterBar {
+  display: flex;
+  padding: $spacing-sm $page-padding;
+  background: $color-bg-card;
+  overflow-x: auto;
+  white-space: nowrap;
+  box-shadow: $shadow-card;
+}
+
+.filterItem {
+  display: inline-block;
+  padding: 8rpx $spacing-md;
+  border-radius: $radius-button;
+  font-size: $font-size-sm;
+  color: $color-text-secondary;
+  margin-right: $spacing-sm;
+  background: $color-bg-hover;
+  transition: all $transition-base;
+  white-space: nowrap;
+}
+
+.filterItemActive {
+  background: $color-bg-gradient;
+  color: $color-text-white;
+  font-weight: $font-weight-medium;
+}
+
+// 列表
+.list {
+  padding: $spacing-md $page-padding 120rpx;
+}
+
+// 浮动添加按钮
+.fab {
+  position: fixed;
+  right: $page-padding;
+  bottom: 160rpx;
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: $radius-round;
+  background: $color-bg-gradient;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: $shadow-float;
+  z-index: 100;
+  transition: all $transition-base;
+
+  &:active {
+    transform: scale(0.92);
+    opacity: 0.9;
+  }
+}
+
+.fabText {
+  font-size: 48rpx;
+  color: $color-text-white;
+  font-weight: $font-weight-bold;
+}
+
+// 空状态
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rpx 0;
+}
+
+.emptyIcon {
+  font-size: 80rpx;
+  margin-bottom: $spacing-md;
+}
+
+.emptyText {
+  font-size: $font-size-md;
+  color: $color-text-tertiary;
+  margin-bottom: $spacing-lg;
+}
+
+.emptyBtn {
+  padding: 16rpx $spacing-xl;
+  background: $color-bg-gradient;
+  border-radius: $radius-button;
+  color: $color-text-white;
+  font-size: $font-size-md;
+}

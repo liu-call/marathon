@@ -1,0 +1,4 @@
+export default definePageConfig({
+  navigationBarTitleText: '我的赛事',
+  enablePullDownRefresh: true,
+})
