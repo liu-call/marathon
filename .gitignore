@@ -25,9 +25,13 @@ logs/
 # Taro / 小程序构建产物
 miniprogram/dist/
 miniprogram/.taro/
+miniprogram/.taro4.0/
+miniprogram/.npm/
+miniprogram/.swc/
 
 # 后端构建产物
 backend/dist/
+backend/uploads/
 
 # 测试缓存
 coverage/

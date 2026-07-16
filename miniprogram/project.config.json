@@ -1,9 +1,9 @@
 {
   "miniprogramRoot": "dist/",
   "cloudfunctionRoot": "cloudfunctions/",
-  "projectname": "taro_template",
-  "description": "taro_template",
-  "appid": "touristappid",
+  "projectname": "marathon",
+  "description": "马拉松管理小程序",
+  "appid": "wx27b8fe8eb65c8175",
   "setting": {
     "urlCheck": true,
     "es6": false,

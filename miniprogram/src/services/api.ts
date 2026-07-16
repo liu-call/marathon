@@ -1,10 +1,10 @@
 import Taro from '@tarojs/taro'
 
-// 后端 API 地址（部署时修改为实际地址）
-const BASE_URL = 'https://api.example.com/api'
+// 后端 API 地址（本地测试用 localhost，部署时改为实际地址）
+const BASE_URL = 'http://localhost:3000/api'
 
-// 本地开发 mock 开关
-const USE_MOCK = true
+// 本地开发 mock 开关（false = 连接真实后端）
+const USE_MOCK = false
 
 /**
  * 封装 HTTP 请求

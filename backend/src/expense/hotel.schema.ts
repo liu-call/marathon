@@ -56,3 +56,6 @@ export class Hotel extends Document {
 }
 
 export const HotelSchema = SchemaFactory.createForClass(Hotel)
+
+// 复合索引：按用户 + 赛事查询酒店（GET /hotels/race/:raceId）
+HotelSchema.index({ userId: 1, raceId: 1 })
